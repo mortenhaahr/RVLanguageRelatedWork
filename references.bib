@@ -1,0 +1,39 @@
+% 02.08 meeting: Brought up by LE.
+% About reconfiguring systems and while ensuring safety. Properties are not dynamically updated.
+@article{heinzemannTransactionalExecutionHierarchical2019,
+  title    = {Transactional Execution of Hierarchical Reconfigurations in Cyber-Physical Systems},
+  author   = {Heinzemann, Christian and Becker, Steffen and Volk, Andreas},
+  year     = {2019},
+  month    = feb,
+  journal  = {Software \& Systems Modeling},
+  volume   = {18},
+  number   = {1},
+  pages    = {157--189},
+  issn     = {1619-1374},
+  doi      = {10.1007/s10270-017-0583-z},
+  urldate  = {2024-08-02},
+  abstract = {Cyber-physical systems reconfigure the structure of their software architecture, e.g., to avoid hazardous situations and to optimize operational conditions like their energy consumption. These reconfigurations have to be safe so that the systems protect their users or environment against harmful conditions or events while changing their structure. As software architectures are typically built on components, reconfiguration actions need to take into account the component structure. This structure should support vertical composition to enable hierarchically encapsulated components. While many reconfiguration approaches for cyber-physical and embedded real-time systems allow the use of hierarchically embedded components, i.e., vertical composition, none of them offers a modeling and verification solution to take hierarchical composition, i.e., encapsulation, into account thus limiting reuse and compositional verification. In this paper, we present an extension to our existing modeling language, MechatronicUML, to enable safe hierarchical reconfigurations. The three extensions are (a) an adapted variant of the 2-phase-commit protocol to initiate reconfigurations that maintain component encapsulation, (b) the integration of feedback controllers during reconfiguration, and (c) a verification approach based on (timed) model checking for instances of our model. We illustrate our approach on a case study in the area of smart railway systems by showing two different use cases of our approach. We show that using our approach the systems can be easily designed to reconfigure safely.},
+  langid   = {english},
+  keywords = {Atomicity,Component model,Consistency,Correctness-by-construction,CPS,Feedback controller exchange,Isolation,Reconfiguration behavior,Runtime reconfiguration,Safe reconfiguration,Timed model checking,Transactions}
+}
+
+
+% 02.08 meeting: Brought up by TW.
+% They define outer monitors that can instantiate inner monitors with parameters
+@incollection{gorostiagaNestedMonitorsMonitors2021,
+  title      = {Nested {{Monitors}}: {{Monitors}} as {{Expressions}} to {{Build Monitors}}},
+  shorttitle = {Nested {{Monitors}}},
+  booktitle  = {Runtime {{Verification}}},
+  author     = {Gorostiaga, Felipe and S{\'a}nchez, C{\'e}sar},
+  editor     = {Feng, Lu and Fisman, Dana},
+  year       = {2021},
+  volume     = {12974},
+  pages      = {164--183},
+  publisher  = {Springer International Publishing},
+  address    = {Cham},
+  doi        = {10.1007/978-3-030-88494-9_9},
+  urldate    = {2024-08-02},
+  abstract   = {Stream runtime verification (SRV) is a formalism to express monitors as relations between typed input streams (observations) and typed output streams (data verdicts). In SRV, the actual data operations are separated from the temporal dependencies, therefore generalizing monitoring algorithms for temporal logics into the computation of richer verdicts. In this paper we study a new and powerful feature, which consists of lifting the execution of monitors to functions that can be used in defining expressions of enclosing specifications. At runtime, the outer monitor invokes the inner monitor passing a list of input events, called a slice. We present nested monitors for synchronous streams and for real-time event streams, allowing the elegant description of many specifications of interest, while still keeping the resources bounded.},
+  isbn       = {978-3-030-88493-2 978-3-030-88494-9},
+  langid     = {english}
+}
